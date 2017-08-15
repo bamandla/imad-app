@@ -9,6 +9,18 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/article-One', function (req, res) {
+  res.send('Article one requested by Srujan');
+});
+  
+app.get('/article-Two', function (req, res) {
+  res.send('Article Two requested by Srujan');
+});
+  
+app.get('/article-Three', function (req, res) {
+  res.send('Article Three requested by Srujan');
+});
+  
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
